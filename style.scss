@@ -1,0 +1,119 @@
+html,
+body,
+.container {
+    width: 100%;
+    height: 100%;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+}
+.dots-container {
+    background-color: #fff;
+    border: 1px solid #f00;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: relative;
+    zoom: 4;
+}
+.dot {
+    position: absolute;
+    top: 0;
+    left: calc(50% - 5px);
+    width: 10px;
+    height: 10px;
+    background-color:dodgerblue;
+    border-radius: 50%;
+    display: none;
+    animation: rotate;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+.line {
+    width: 50%;
+    height: 2px;
+    background-color: red;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    display: none;
+    transform-origin: left;
+    transform: translateY(-50%) rotate(-45deg);
+}
+.dot-1 {
+    display: block; 
+    animation-delay: 0s;
+    transform: translate(0px, 0px); 
+}
+.dot-2 {
+    background-color: red;
+    display: block; 
+    animation-delay: .3s; 
+}
+.dot-3 { 
+    background-color: yellow;
+    animation-delay: .6s;
+    display: block;
+ }
+.dot-4 { animation-delay: .3s; }
+.dot-5 { animation-delay: .4s; }
+.dot-6 { animation-delay: .5s; }
+.dot-7 { animation-delay: .6s; }
+@keyframes rotate {
+    0% { transform: translate(0,0); }
+    1% { transform: translate(1px,0px); }
+    2% { transform: translate(2px,0px); }
+    3% { transform: translate(3px,1px); }
+    4% { transform: translate(4px,2px); }
+    5% { transform: translate(5px,3px); }
+    6% { transform: translate(5px,4px); }
+    7% { transform: translate(5px,5px); }
+    8% { transform: translate(5px,6px); }
+    9% { transform: translate(5px,7px); }
+    10% { transform: translate(4px,8px); }
+    11% { transform: translate(3px,10px); }
+    12% { transform: translate(2px,10px); }
+    13% { transform: translate(0px,10px); }
+    14% { transform: translate(0px,10px); }
+    15% { transform: translate(-1px,10px); }
+    16% { transform: translate(-2px,10px); }
+    17% { transform: translate(-3px,9px); }
+    18% { transform: translate(-4px,8px); }
+    19% { transform: translate(-5px,7px); }
+    20% { transform: translate(-5px,6px); }
+    21% { transform: translate(-5px,5px); }
+    22% { transform: translate(-5px,4px); }
+    23% { transform: translate(-5px,3px); }
+    24% { transform: translate(-4px,2px); }
+    25% { transform: translate(-3px,1px); }
+    26% { transform: translate(-2px,0px); }
+    27% { transform: translate(-1px,0px); }
+    28% { transform: translate(0px,0px); }
+    // 29% { transform: translate(21px,29px); }
+    // 30% { transform: translate(20px,30px); }
+    // 31% { transform: translate(19px,31px); }
+    // 32% { transform: translate(18px,32px); }
+    // 33% { transform: translate(17px,33px); }
+    // 34% { transform: translate(16px,34px); }
+    // 35% { transform: translate(15px,35px); }
+    // 36% { transform: translate(14px,36px); }
+    // 37% { transform: translate(13px,37px); }
+    // 38% { transform: translate(12px,38px); }
+    // 39% { transform: translate(11px,39px); }
+    // 40% { transform: translate(10px,40px); }
+    // 41% { transform: translate(9px,41px); }
+    // 42% { transform: translate(8px,42px); }
+    // 43% { transform: translate(7px,43px); }
+    // 44% { transform: translate(6px,44px); }
+    // 45% { transform: translate(5px,45px); }
+    // 46% { transform: translate(4px,46px); }
+    // 47% { transform: translate(3px,47px); }
+    // 48% { transform: translate(2px,48px); }
+    // 49% { transform: translate(1px,49px); }
+    // 50% { transform: translate(0,50px); }
+    // 75% { transform: translate(-25px,25px); }
+    100% { transform: translate(0,0); }
+}
